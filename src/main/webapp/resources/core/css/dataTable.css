@@ -1,0 +1,192 @@
+
+
+@CHARSET "ISO-8859-1";
+
+.dataTables_filter {
+   float: left;
+   text-align: right;
+   width: 50%;
+   padding-bottom: 10px;
+   }
+
+.dataTables_length {
+    width: 30%;
+    float: left;
+}
+
+table.display {
+   /*  margin: 0px auto; */
+    clear: both;
+    width: 95%;
+    padding: 10px;
+}
+
+table.dataGrid {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.dataGrid  th {
+	border-width: 1px;
+	padding: 5px;
+	color: #ffffff;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.dataGrid  td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #a9c6c9;
+	min-width: 50px;
+	min-height: 20px;
+}
+
+}
+table.dataGrid tr.odd { background-color: #DCEDES; }
+
+table.dataGrid tr.even { background-color: #80CED0; }
+
+
+table.dataGrid  thead{
+		background-color:#008198;
+}
+
+.dataGrid {
+	width: 100%;
+}
+
+.dataTables_paginate {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+}
+
+table.dataGrid .lastcol{
+	width: 8px;
+	/* padding: 0px; */
+	/* margin: 0px; */
+	border: none;
+	background-color:rgb(235, 235, 230);
+}
+.addedRow {
+	background-color: #CCEA8D;
+}
+.updatedRow {
+	background-color: #FFF2AC;
+}
+.deletedRow {
+	background-color: #C98400;
+}
+
+/*** Pagination Styles ***/
+
+.paging_full_numbers .ui-button {
+	padding: 2px 6px;
+	margin: 0px 5px;
+	cursor: pointer;
+	* cursor: hand;
+	background-color: #D4CCBF;
+	color: #333 !important;
+	border: 1px solid #60513A;
+}
+
+.paging_full_numbers a.paginate_active {
+    background-color: rgb(153, 179, 255);
+}
+.dataTables_paginate .ui-button {
+	margin-right: -0.1em !important;
+}
+
+.paging_full_numbers {
+	width: 350px !important;
+}
+
+.dataTables_wrapper .ui-toolbar {
+	padding: 5px;
+}
+
+.dataTables_paginate {
+	width: auto;
+}
+
+.dataTables_paginate {
+	float: left;
+	text-align: left;
+}
+
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.paging_full_numbers a:active {
+	outline: none
+}
+
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+table.innerDisplay {
+   /*  margin: 0px auto; */
+    clear: both;
+    width: 98%;
+    margin-left: 2%;
+    padding-left: 0px;
+    table-layout: fixed;
+}
+
+table.subCatinnerDisplay {
+   /*  margin: 0px auto; */
+    clear: both;
+    width: 96%;
+    margin-left: 4%;
+    padding-left: 0px;
+    table-layout: fixed;
+}
+
+table.innerDataGrid {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.innerDataGrid  th {
+	border-width: 1px;
+	padding: 0%;
+	color: #ffffff;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.innerDataGrid  td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #a9c6c9;
+	min-width: 50px;
+	min-height: 20px;
+}
+
+}
+table.innerDataGrid tr.odd { background-color: #DCEDES; }
+
+table.innerDataGrid tr.even { background-color: #80CED0; }
+
+
+table.innerDataGrid  thead{
+		background-color:#008198;
+}
+
+.innerDataGrid {
+	width: 98%;
+}
+
+.center{
+	text-align: center;
+}
+
+

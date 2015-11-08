@@ -1,0 +1,23 @@
+table {
+	color: #333; /* Lighten up font color */
+	table-layout: "fixed";
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	width: "100%";
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td {
+  height: 20px;
+  overflow: hidden;
+}
+button { 
+
+    fort-size : "6";
+    background-color:gray; 
+    background-size : "100%";
+    width : 30px;
+    height:  30px;
+    border:1px solid; 
+    border-color: #696 #363 #363 #696; 
+}
