@@ -1,6 +1,6 @@
 # FileReader:
 
-Please find FileReaderDocument on following path in src folder
+Please import folder into eclipse and look for FileReaderDocument on following path in src folder,
 
 Go to src/main/resources/FileReaderDocument.docx
 
