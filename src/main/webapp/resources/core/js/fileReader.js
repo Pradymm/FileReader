@@ -2,12 +2,13 @@ var oTable = null;
 var bTable = null;
 
 $(document).ready(function() {
+	
+	populateFileNames();
 
 });
 
-// Click on select file dropdown and it populates file-names.
-$("#selFile").click(
-		function() {
+// This function populates file-names.
+		function populateFileNames() {
 			$.ajax({
 				dataType : "json",
 				type : "GET",
@@ -27,7 +28,7 @@ $("#selFile").click(
 					alert("err" + thrownError + xhr.responseText);
 				}
 			});
-		});
+		}
 
 // Click on show table button and it loads both the tables on screen
 // it passes fileName to server side using ajax and reads from the filename
