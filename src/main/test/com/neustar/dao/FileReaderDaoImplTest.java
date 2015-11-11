@@ -32,9 +32,12 @@ public class FileReaderDaoImplTest {
 		BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
 
 		FileReaderDaoImpl fileReaderDao = Mockito.mock(FileReaderDaoImpl.class);
+		
 		Set<String> s1 = new HashSet<String>();
 		s1.add("");
-		Set<String> s2 = fileReaderDao.readFile(s);
+		Set<String> s2 = new HashSet<String>();
+		s2.add("");
+		Mockito.when(fileReaderDao.readFile(s)).thenReturn(s2);
 		s2.add("");
 		assertEquals(s1, s2);
 

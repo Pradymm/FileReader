@@ -3,6 +3,7 @@ package com.neustar.service;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
@@ -30,10 +31,12 @@ public class FileReaderServiceImplTest {
 		FileDetails f1 = new FileDetails();
 		f1.setCategory("PERSON");
 		f1.setCount(1);
-		Set<String> fileLines = fileReaderDao.readFile(s);
+		Set<String> fileLines = new HashSet<String>();
+		
+		Mockito.when(fileReaderDao.readFile(s)).thenReturn(fileLines);
+		
 		ArrayList<FileDetails> fileDetails2 = new ArrayList<FileDetails>();
 		fileDetails2.add(f1);
-		fileLines.add("PRSON");
 		fileDetails1.add(f1);
 		assertEquals(fileDetails1, fileDetails2);
 	}
@@ -49,10 +52,10 @@ public class FileReaderServiceImplTest {
 		ArrayList<FileContent> fileContents1 = new ArrayList<FileContent>();
 		FileContent f1 = new FileContent();
 		f1.setFileContent("PERSON");
-		Set<String> fileLines = fileReaderDao.readFile(s);
+		Set<String> fileLines = new HashSet<String>();
+		Mockito.when(fileReaderDao.readFile(s)).thenReturn(fileLines);
 		ArrayList<FileContent> fileContents2 = new ArrayList<FileContent>();
 		fileContents1.add(f1);
-		fileLines.add("PRSON");
 		fileContents2.add(f1);
 		assertEquals(fileContents1, fileContents1);
 	}

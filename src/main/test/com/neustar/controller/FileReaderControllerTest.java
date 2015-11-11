@@ -21,7 +21,7 @@ public class FileReaderControllerTest {
 	FileReaderServiceImpl fileReader;
 
 	@Test
-	public void testReadFileContentService() throws Exception {
+	public void testGetFileContent() throws Exception {
 
 		FileReaderServiceImpl fileReaderService = Mockito.mock(FileReaderServiceImpl.class);
 		String s = "samplethree.txt";
@@ -29,11 +29,34 @@ public class FileReaderControllerTest {
 		ArrayList<FileContent> fileContents1 = new ArrayList<FileContent>();
 		FileContent f1 = new FileContent();
 		f1.setFileContent("PERSON");
-		ArrayList<FileDetails> fileDetails = fileReaderService.readFileService(s);
-		ArrayList<FileContent> fileContents2 = new ArrayList<FileContent>();
+		ArrayList<FileContent> fileContent2 = new ArrayList<FileContent>();
+		
+		//Mockito.when(fileReaderService.readFileContentService((s)).thenReturn(fileContent2));
+		
 		fileContents1.add(f1);
-		fileContents2.add(f1);
+		fileContent2.add(f1);
 		assertEquals(fileContents1, fileContents1);
+	}
+	
+	
+	@Test
+	public void testGetFileData() throws Exception {
+
+		FileReaderServiceImpl fileReaderService = Mockito.mock(FileReaderServiceImpl.class);
+		String s = "samplethree.txt";
+
+		ArrayList<FileDetails> fileDetails1 = new ArrayList<FileDetails>();
+		FileDetails f1 = new FileDetails();
+		f1.setCategory("PERSON");
+		f1.setCount(1);
+	
+		ArrayList<FileDetails> fileDetails2 = new ArrayList<FileDetails>();
+		
+		//Mockito.when(fileReaderService.readFileContentService((s)).thenReturn(fileDetails2));
+		
+		fileDetails1.add(f1);
+		fileDetails2.add(f1);
+		assertEquals(fileDetails1, fileDetails2);
 	}
 
 	@Test
